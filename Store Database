@@ -1,0 +1,23 @@
+CREATE TABLE clothing (ID integer primary key, item TEXT, price INTEGER, quantity_in_stock INTEGER, customer_rating INTEGER);
+
+INSERT INTO clothing VALUES (1, "shorts", 34.59, 8932, 5);
+INSERT INTO clothing VALUES (2, "belts", 21.29, 907, 3);
+INSERT INTO clothing VALUES (3, "pajama_sets", 45.89,4385, 4);
+INSERT INTO clothing VALUES (4, "sweaters", 58.79,2839,5);
+INSERT INTO clothing VALUES (5, "jeans", 78.29, 3490, 3.5); 
+INSERT INTO clothing VALUES (6, "t_shirts", 17.99, 1348, 2);
+INSERT INTO clothing VALUES (7, "jackets", 84.99,4573, 4.5);
+INSERT INTO clothing VALUES (8, "boots", 65.49,738, 1);
+INSERT INTO clothing VALUES (9, "hats", 28.99, 350, 2.5);
+INSERT INTO clothing VALUES (10, "swim_sets", 70.99, 719, 2);
+INSERT INTO clothing VALUES (11, "sandals", 52.99, 5894, 4.5);
+INSERT INTO clothing VALUES (12, "cardigans", 47.89, 2738, 3);
+INSERT INTO clothing VALUES (13, "skirts", 61.99,763, 1); 
+INSERT INTO clothing VALUES (14, "blouses", 38.79, 2849, 1.5);
+INSERT INTO clothing VALUES (15, "tennis_shoes", 91.89, 4219, 5);
+
+SELECT * FROM clothing; 
+
+SELECT * FROM clothing ORDER BY price;
+
+SELECT item, quantity_in_stock FROM clothing ORDER BY customer_rating;
